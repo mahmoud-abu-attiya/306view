@@ -16,7 +16,7 @@
             extend: {
                colors: {
                   primary: "#a37129",
-                  // gray: "#f3f4f6",
+                  secondary: "#d6a55f",
                }
             },
             container: {
@@ -29,9 +29,9 @@
    <link rel="stylesheet" href="style/style.css">
 </head>
 
-<body>
+<body class="bg-white dark:bg-gray-900">
    <!-- START NAVBAR -->
-   <nav class="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
+   <nav class="bg-gray-100 border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
       <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
          <a href="/" class="flex items-center">
             <img src="images/logo.png" class="mr-3 h-8 sm:h-14" alt="Flowbite Logo" />
@@ -65,8 +65,9 @@
    </nav>
    <!-- END NAVBAR -->
    <!-- START HERO SECTION -->
-   <header class="hero text-primary">
-      <div class="container w-fit">
+   <header class="hero relative text-primary dark:text-secondary">
+      <div class="layout absolute top-0 left-0 w-full h-full bg-gray-50/75 dark:bg-gray-900/75 z-10"></div>
+      <div class="container w-fit z-20">
          <h1
             class="gradient-text drop-shadow-lg max-w-2xl mb-4 text-5xl font-extrabold tracking-tight leading-none md:text-6xl xl:text-7xl">
             Lorem ipsum ametconsectetur adip</h1>
@@ -74,29 +75,34 @@
             consectetur adipisicing elit. Quas esse obcaecati deserunt accusantium et nisi a delectus, nemo odit rem
             rerum minima similique corporis temporibus? Ex sequi a corporis unde?</p>
          <div class="header-btns">
-            <button class="gradient text-white py-3 px-5 rounded-full">Book Now</button>
+            <button class="gradient text-white dark:text-gray-900 py-3 px-5 rounded-full">Book Now</button>
          </div>
       </div>
    </header>
    <!-- END HERO SECTION -->
-   <!-- START ABOUT -->
    <div class="container">
-      <section class="text-center py-6">
+      <!-- START ABOUT -->
+      <section class="text-center py-8">
          <h2
             class="gradient-text drop-shadow-lg mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl">
             About</h2>
-         <p class="text-primary max-w-2xl mx-auto mb-6 font-light lg:mb-8 md:text-lg lg:text-xl text-justify">Lorem
+         <p
+            class="text-primary dark:text-secondary max-w-2xl mx-auto mb-6 font-light lg:mb-8 md:text-lg lg:text-xl text-justify">
+            Lorem
             ipsum dolor sit amet consectetur adipisicing elit. Sunt, sapiente fugit! Sit numquam vitae nesciunt
             necessitatibus veniam magni vero sapiente maiores, iure tempore deleniti earum, accusamus dolores quae sequi
             eligendi neque voluptatem animi. Distinctio perferendis, ea enim deserunt ratione ex!</p>
       </section>
+      <!-- END ABOUT -->
       <hr>
-      <section class="text-center py-6">
+      <!-- START PICTURES -->
+      <section class="text-center py-8">
 
          <h2
             class="gradient-text drop-shadow-lg mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl">
             Pictures</h2>
-         <p class="text-primary max-w-2xl mx-auto mb-6 font-light lg:mb-8 md:text-lg lg:text-xl ">Lorem ipsum dolor sit
+         <p class="text-primary dark:text-secondary max-w-2xl mx-auto mb-6 font-light lg:mb-8 md:text-lg lg:text-xl ">
+            Lorem ipsum dolor sit
             amet consectetur adipisicing elit. Sunt</p>
 
          <div id="default-carousel" class="relative w-full md:w-[90%] mx-auto" data-carousel="static">
@@ -163,8 +169,88 @@
          </div>
 
       </section>
+      <!-- END PICTURES -->
+      <hr>
+      <!-- START PRICE -->
+      <section class="py-8">
+         <div class="head text-center">
+            <h2
+               class="gradient-text drop-shadow-lg mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl">
+               The Prices</h2>
+            <p class="text-primary dark:text-secondary max-w-2xl mx-auto mb-6 font-light lg:mb-8 md:text-lg lg:text-xl">
+               Lorem
+               ipsum dolor sit amet consectetur adipisicing elit.</p>
+         </div>
+         <div class="timeline bg-gray-100 dark:bg-gray-800 p-6 rounded-xl">
+            <div class="item flex text-gray-500 dark:text-gray-400">
+               <div class="info w-[70%]">
+                  <h3 class="header gradient-text mb-4 text-3xl tracking-tight leading-none md:text-4xl xl:text-5xl">
+                     WEEKDAYS</h3>
+                  <span class="text-2xl tracking-tight font-light md:text-3xl xl:text-4xl">Saturday - Wednesday</span>
+                  <div class="mx-auto mb-6 font-light lg:mb-8 md:text-lg lg:text-xl">Lorem, ipsum dolor sit amet
+                     consectetur adipisicing elit. Soluta, et eum atque
+                     molestias harum eius aut inventore quas corporis cum ut possimus magnam distinctio</div>
+               </div>
+               <div class="w-[30%] flex justify-center items-center">
+                  <a href="/"
+                     class="gradient py-3 px-4 rounded-full text-gray-50 dark:text-gray-900 text-2xl tracking-tight font-light md:text-3xl xl:text-4xl">1000
+                     QR</a>
+               </div>
+            </div>
+            <hr class="mb-6">
+            <div class="item flex text-gray-500 dark:text-gray-400">
+               <div class="info w-[70%]">
+                  <h3 class="header gradient-text mb-4 text-3xl tracking-tight leading-none md:text-4xl xl:text-5xl">
+                     WEEKDAYS</h3>
+                  <span class="text-2xl tracking-tight font-light md:text-3xl xl:text-4xl">Thursday or Friday</span>
+                  <div class="mx-auto mb-6 font-light lg:mb-8 md:text-lg lg:text-xl">Lorem, ipsum dolor sit amet
+                     consectetur adipisicing elit. Soluta, et eum atque
+                     molestias harum eius aut inventore quas corporis cum ut possimus magnam distinctio</div>
+               </div>
+               <div class="w-[30%] flex justify-center items-center">
+                  <a href="/"
+                     class="gradient py-3 px-4 rounded-full text-gray-50 dark:text-gray-900 text-2xl tracking-tight font-light md:text-3xl xl:text-4xl">2000
+                     QR</a>
+               </div>
+            </div>
+            <hr class="mb-6">
+            <div class="item flex text-gray-500 dark:text-gray-400">
+               <div class="info w-[70%]">
+                  <h3 class="header gradient-text mb-4 text-3xl tracking-tight leading-none md:text-4xl xl:text-5xl">
+                     WEEKDAYS</h3>
+                  <span class="text-2xl tracking-tight font-light md:text-3xl xl:text-4xl">Thursday & Friday
+                     (%2days)</span>
+                  <div class="mx-auto mb-6 font-light lg:mb-8 md:text-lg lg:text-xl">Lorem, ipsum dolor sit amet
+                     consectetur adipisicing elit. Soluta, et eum atque
+                     molestias harum eius aut inventore quas corporis cum ut possimus magnam distinctio</div>
+               </div>
+               <div class="w-[30%] flex justify-center items-center">
+                  <a href="/"
+                     class="gradient py-3 px-4 rounded-full text-gray-50 dark:text-gray-900 text-2xl tracking-tight font-light md:text-3xl xl:text-4xl">3000
+                     QR</a>
+               </div>
+            </div>
+            <div class="pl-8 rounded-xl p-4 bg-white dark:bg-gray-900 text-gray-500 dark:text-gray-400">
+               <div
+                  class="text-xl text-primary dark:text-secondary tracking-tight font-light md:text-2xl xl:text-3xl mb-4">
+                  <i class="fas fa-share"></i> Check in: 3pm</div>
+               <div
+                  class="text-xl text-primary dark:text-secondary tracking-tight font-light md:text-2xl xl:text-3xl mb-4">
+                  <i class="fas fa-share"></i> Check out: 2pm</div>
+               <p class="mb-6 font-light lg:mb-8 md:text-lg lg:text-xl">
+                  <i class="fas fa-bookmark text-primary dark:text-secondary"></i> Providing Special prices for
+                  reservations more than 3 days. <br>
+                  <i class="fas fa-bookmark text-primary dark:text-secondary"></i> Weekly and monthly bookings are
+                  available. <br>
+
+                  <i class="fas fa-bookmark text-primary dark:text-secondary"></i> Its the customer’s responsibility for
+                  covering any damage. <br>
+               </p>
+            </div>
+         </div>
+      </section>
+      <!-- END PRICE  -->
    </div>
-   <!-- END ABOUT -->
    <!-- START FOOTER -->
    <footer class="p-4 bg-gray-100 md:p-8 lg:p-10 dark:bg-gray-800">
       <div class="container">
