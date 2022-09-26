@@ -51,3 +51,9 @@ hr{
    -moz-background-clip: text;
    -moz-text-fill-color: transparent;
 }
+.book-section{
+   transition: 0.4s;
+}
+.book-section:hover{
+   transform: scale(1.03);
+}
