@@ -63,3 +63,14 @@ hr {
 .book-section:hover {
    transform: scale(1.03);
 }
+.reset-time{
+   display: none;
+}
+@media print {
+   .reset-btns{
+      display: none;
+   }
+   .reset-time{
+      display: block;
+   }
+}

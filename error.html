@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <script src="https://cdn.tailwindcss.com"></script>
+   <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
+   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+   <script>
+      tailwind.config = {
+         theme: {
+            extend: {
+               colors: {
+                  primary: "#a37129",
+                  secondary: "#d6a55f",
+               }
+            },
+            container: {
+               center: true,
+               padding: "1rem",
+            },
+         },
+      };
+   </script>
+   <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body class="bg-gray-100 dark:bg-gray-900 grid place-content-center h-[100vh]">
+   <div class="relative bg-white rounded-lg shadow-xl dark:bg-gray-700">
+      <div class="p-6 text-center">
+         <i class="far fa-exclamation-circle text-7xl text-red-500 mb-8"></i>
+         <h3 class="mb-5 text-lg font-normal text-gray-500 dark:text-gray-400">There is something wrong!</h3>
+         <a href="#" class="text-primary dark:text-secondary border border-primary dark:border-secondary dark:hover:bg-gray-900 hover:bg-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Try again </a>
+      </div>
+   </div>
+   <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+</body>
+
+</html>
