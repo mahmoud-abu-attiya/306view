@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <script src="https://cdn.tailwindcss.com"></script>
+   <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
+   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+   <script>
+      tailwind.config = {
+         theme: {
+            extend: {
+               colors: {
+                  primary: "#a37129",
+                  secondary: "#d6a55f",
+               }
+            },
+            container: {
+               center: true,
+               padding: "1rem",
+            },
+         },
+      };
+   </script>
+   <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body class="bg-white dark:bg-gray-900">
+
+   <div class="container pt-8">
+      <div class="flex text-gray-500 dark:text-gray-400 border-b  dark:border-gray-700 mb-4">
+         <a href="normal_table.html" class="n w-1/2 text-center py-8 border-r  dark:border-gray-700 hover:bg-gray-50 cursor-pointer dark:hover:bg-gray-600">Normal Reservations</a>
+         <a href="special_table.html" class="s w-1/2 text-center py-8 hover:bg-gray-50 dark:hover:bg-gray-600 cursor-pointer">Special Reservations</a>
+      </div>
+      <div class="overflow-x-auto relative shadow-md sm:rounded-lg">
+         <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+            <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+               <tr>
+                  <th scope="col" class="py-3 px-6">
+                  Name
+                  </th>
+                  <th scope="col" class="py-3 px-6">
+                     Start date
+                  </th>
+                  <th scope="col" class="py-3 px-6">
+                     End date
+                  </th>
+                  <th scope="col" class="py-3 px-6">
+                     Paid
+                  </th>
+                  <th scope="col" class="py-3 px-6">
+                     <span class="sr-only">More info</span>
+                  </th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                  <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                     Apple MacBook Pro 17"
+                  </th>
+                  <td class="py-4 px-6">
+                     Sliver
+                  </td>
+                  <td class="py-4 px-6">
+                     Laptop
+                  </td>
+                  <td class="py-4 px-6 text-green-600 text-2xl">
+                     <i class="fad fa-check-circle"></i>
+                  </td>
+                  <td class="py-4 px-6 text-right">
+                     <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">More info</a>
+                  </td>
+               </tr>
+               <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                  <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                     Microsoft Surface Pro
+                  </th>
+                  <td class="py-4 px-6">
+                     White
+                  </td>
+                  <td class="py-4 px-6">
+                     Laptop PC
+                  </td>
+                  <td class="py-4 px-6 text-green-600 text-2xl">
+                     <i class="fad fa-check-circle"></i>
+                  </td>
+                  <td class="py-4 px-6 text-right">
+                     <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">More info</a>
+                  </td>
+               </tr>
+               <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                  <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                     Microsoft Surface Pro
+                  </th>
+                  <td class="py-4 px-6">
+                     White
+                  </td>
+                  <td class="py-4 px-6">
+                     Laptop PC
+                  </td>
+                  <td class="py-4 px-6 text-green-600 text-2xl">
+                     <!-- <i class="fad fa-check-circle"></i> -->
+                     <i class="fad fa-times-circle text-red-600"></i>
+                  </td>
+                  <td class="py-4 px-6 text-right">
+                     <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">More info</a>
+                  </td>
+               </tr>
+               <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                  <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                     Microsoft Surface Pro
+                  </th>
+                  <td class="py-4 px-6">
+                     White
+                  </td>
+                  <td class="py-4 px-6">
+                     Laptop PC
+                  </td>
+                  <td class="py-4 px-6 text-green-600 text-2xl">
+                     <!-- <i class="fad fa-check-circle"></i> -->
+                     <i class="fad fa-times-circle text-red-600"></i>
+                  </td>
+                  <td class="py-4 px-6 text-right">
+                     <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">More info</a>
+                  </td>
+               </tr>
+               <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                  <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                     Microsoft Surface Pro
+                  </th>
+                  <td class="py-4 px-6">
+                     White
+                  </td>
+                  <td class="py-4 px-6">
+                     Laptop PC
+                  </td>
+                  <td class="py-4 px-6 text-green-600 text-2xl">
+                     <i class="fad fa-check-circle"></i>
+                  </td>
+                  <td class="py-4 px-6 text-right">
+                     <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">More info</a>
+                  </td>
+               </tr>
+               <tr class="bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600">
+                  <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                     Magic Mouse 2
+                  </th>
+                  <td class="py-4 px-6">
+                     Black
+                  </td>
+                  <td class="py-4 px-6">
+                     Accessories
+                  </td>
+                  <td class="py-4 px-6 text-green-600 text-2xl">
+                     <i class="fad fa-check-circle"></i>
+                  </td>
+                  <td class="py-4 px-6 text-right">
+                     <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">More info</a>
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+   </div>
+
+   <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+</body>
+
+</html>
